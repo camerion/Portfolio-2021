@@ -99,7 +99,6 @@ body {
   color: #b4b7ba;
 }
 .content-wrapper {
-  max-width: 1200px;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -111,7 +110,7 @@ ul {
 }
 a {
   color:#b4b7ba;
-text-decoration: none;
+  text-decoration: none;
 }
 h2 {
   font-family: 'Montserrat', sans-serif;
@@ -141,7 +140,7 @@ address {
 
 .content-wrapper {
   max-width: 90%;
-  margin: 0;
+  margin: 50px 0;
 }
 header, footer {
   display: flex;
@@ -176,12 +175,6 @@ header h1{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
-}
-.header-divider{
-  background: #3e4440;
-  width: 100%;
-  height: 1px;
-  margin: 10px 0;
 }
 header nav {
   padding: 20px 0;
@@ -410,12 +403,135 @@ background: #f0ede5;
   /* Style adjustments for viewports that meet the condition */
 }
 
+
+/*Tablet Styles*/
+@media only screen and (min-width: 768px){
+  /*Base Styles*/
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+  h3{
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  /*Header*/
+  header {
+  justify-content: space-around;
+  padding: 33px 0;
+}
+header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+}
+header figure{
+  width: 30%;
+}
+header nav {
+    width: 30%;
+}
+header nav ul {
+  justify-content: space-between;
+}
+header h1 {
+    border-bottom: none;
+}
+/*Portfolio*/
+
+.portfolio article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+
+/*Skills*/
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+.skills .skills-icons {
+      width: 62%;
+}
+
+/*Footer*/
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+footer .contact {
+  margin-bottom: 0;
+}
+footer h4{
+font-size: 1.5em;
+margin-bottom: 40px;
+}
+footer p{
+  line-height: 1.285;
+}
+footer .copyright {
+  width: 100%;
+}
+.social-icons i {
+  margin: 0 20px;
+}
+
+
+/*Desktop styles*/
+
+@media only screen and (min-width: 1200px) {
+
+  header{
+    padding: 15px 0;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+  h2{
+  font-size: 2.25em;
+}
+h3,h3 {
+  font-size: 1.187em;
+}
+p {
+  font-size: 1.125em;
+  line-height: 1.333;
+}
+
+/*About Me*/
+/*Portfolio*/
+.portfolio h2 {
+  width: 90%;
+}
+.portfolio article {
+  flex-basis: 33%;
+}
+
+/*Skills*/
+
+/*Footer*/
+}
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
