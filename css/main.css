@@ -96,7 +96,7 @@ body {
   font-family: 'Open Sans',sans-serif;
   text-align: left;
   background-color: #2e4a62;
-  color: #b4b7ba;
+  color: #7d8082;
 }
 .content-wrapper {
   width: 90%;
@@ -149,6 +149,7 @@ header, footer {
   flex-flow: row wrap;
   background-color: #f0ede5;
   padding: 0 20px;
+  color:
 }
 
 /*Header*/
