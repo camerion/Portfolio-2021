@@ -478,7 +478,7 @@ footer .copyright {
     padding: 15px 0;
   }
   header h1 {
-    padding: 0 30px;
+    padding: 0 60px;
   }
 header nav {
   width: 40%;
@@ -502,6 +502,15 @@ p {
 }
 
 /*About Me*/
+.about h2 {
+  width: 90%;
+}
+div .content-divider {
+  background: #c0ab8c;
+  width: 100%;
+  height: 5px;
+  margin: 10px 0;
+}
 /*Portfolio*/
 .portfolio h2 {
   width: 90%;
