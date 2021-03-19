@@ -238,6 +238,10 @@ footer .copyright {
 
 /*-----Mobile Styles----*/
 
+
+.about .portfolio {
+  padding: 0 auto;
+}
 /*About Me*/
 #about {
 width: 85%;
@@ -249,6 +253,10 @@ padding: 0 50px;
 .about img{
   border-radius: 50%;
   padding: 20px;
+}
+.about h2 {
+  text-align: left;
+  text-decoration: underline;
 }
 .about p {
    text-indent:40px;
@@ -286,7 +294,7 @@ color: #E0E0E0;
   flex-flow: row wrap;
 }
 .portfolio img{
-  width: 140%;
+  width: 120%;
   height: auto;
   padding: 0 20px;
   margin: auto 50px;
@@ -387,9 +395,7 @@ color: #E0E0E0;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+
 
 
 /*Tablet Styles*/
@@ -432,6 +438,7 @@ header h1 {
 }
 /*About*/
 .about h2{
+  
   text-align: left;
   padding-right: 200px;
 }
@@ -477,11 +484,12 @@ footer .copyright {
 @media only screen and (min-width: 1200px) {
 
   .container {
-   /* max-width: 1200px;
-    width: 90%;*/
+    max-width: 960px;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    margin: 0 auto;
   }
   header{
     justify-content: space-between;
@@ -514,6 +522,9 @@ p {
 /*About Me*/
 .about h2 {
   width: 90%;
+}
+.about img {
+  padding: 20px;
 }
 div .content-divider {
   background: #c0ab8c;
