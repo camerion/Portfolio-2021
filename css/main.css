@@ -27,10 +27,6 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 
 ::selection {
   background: #b3d4fc;
@@ -229,7 +225,7 @@ footer .copyright {
 .social-icons i {
   color: #4F4F4F;
   background: #c0ab8c;
-  border: 20px solid #c0ab8c;
+  border: 20px solid #bba88c;
   border-radius: 100%;
   width: 15px;
   height: 15px;
@@ -240,7 +236,7 @@ footer .copyright {
 
 
 .about .portfolio {
-  padding: 0 auto;
+  padding: 0 10px;
 }
 /*About Me*/
 #about {
@@ -549,7 +545,6 @@ footer {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
