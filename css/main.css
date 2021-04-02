@@ -5,28 +5,39 @@ html {
 /*===========Grid Styles & Layout========*/
 
 .container{
-  width: 100vw;display: grid;
+  width: 90%;
+  margin: 0 50px;
+  background-color: #e2b8c1;
+  width: 100vw;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6 1fr);
   grid-template-areas: "header" "portfolio" "about" "skills" "footer" "copyright";
 }
 
 header {
+  background-color: 	#e7dddf;
   grid-area: header;
+
 }
 .portfolio{
+  background-color: 	#e2b8c1;
   grid-area: portfolio;
 }
 .about {
+  background-color: 	#e2b8c1;
   grid-area: about;
 }
 .skills{
+  background-color: 	#f2ede2;
   grid-area: skills;
 }
 footer {
+  background-color: 	#e7dddf;
   grid-area: footer;
 }
 .copyright {
+  background-color: 	#e7dddf;
   grid-area: copyright;
 }
 /*===================Content-Styles==================*/
@@ -35,21 +46,74 @@ body {
   font-size: 1em;
   font-family:'Opens Sans', sans-serif;
   text-align: left;
-  color: grey;
-  background: #e2b8c1;
+  color: #333333;
+  
 }
 ul{
   list-style-type: none;
 }
-a {
-  color: gray;
+li a {
+  color: #333333;
   text-decoration: none;
 }
 h1{
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
 }
-img{
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875em;
+  font-weight: 700;
+  text-align: center;
+}
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em;
+  margin: 20px 0;
+  font-weight: 500;
+}
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+figure {
+  margin: 0;
+}
+address {
+font-style: normal;
+}
+
+/*===============Header & NavBar==========*/
+header nav li{
+  align-items: center;
+}
+
+/*=============Portfolio Section===============*/
+.project {
+  margin: 50px auto;
+}
+.project figure {
+  padding: 50px;
+}
+.portfolio img {
   width: 50%;
-  height:50%;
+  height: 50%;
+}
+.portfolio figcaption a {
+  text-decoration: none;
+  color: #333333;
+}
+
+/*================About Me Section=================*/
+.about {
+  margin: 25px auto;
+}
+.about img {
+  width: 25%;
+  border-radius: 100%;
+  margin: 15px auto;
+}
+.about p {
+  padding: 15px auto;
 }
