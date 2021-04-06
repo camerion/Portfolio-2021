@@ -366,3 +366,68 @@ footer h4 {
 }
 
 }
+
+
+/*=============================Desktop Styles=============================*/
+
+@media only screen and (min-width: 1200px) {
+/*=======Base Style and Grid======*/
+
+.conatiner {
+  max-width: 960px;
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: 
+    "header header header header" 
+    "skills portfolio portfolio portfolio" 
+    "skills portfolio portfolio portfolio" 
+    "skills about about about" 
+    "skills about about about"   
+    "footer footer footer footer";
+}
+
+/*About*/
+
+.about img {
+  width: 15%;
+}
+
+/*Skills*/
+
+.skills-items {
+  font-size: 2em;
+  display: grid;
+  grid-template-columns: 260px 260px 1fr;
+  grid-template-rows: 200px 200px;
+  grid-area: 
+  "html css jscript"
+  "react github"
+}
+.html{
+  grid-area: html;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.css {
+  grid-area: css;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.jscript {
+  grid-area: jscript;
+  grid-column: 3/-1;
+  grid-row: 1/2;
+}
+ .react {
+  grid-area: react;
+  grid-column: 1/2;
+  grid-row: 2/-1;
+}
+.github {
+  grid-area: github;
+  grid-column:2/3;
+  grid-row: 2/-1;
+}
+}
